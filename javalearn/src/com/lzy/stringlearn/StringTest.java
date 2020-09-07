@@ -30,6 +30,9 @@ public class StringTest {
         String s3=change1(s2);
         System.out.println(s3);//just so so 1
         System.out.println(s3==s2);//false
+        System.out.println("************************************************");
+        String ss="helloworld";
+        System.out.println(ss.toCharArray()[1]);
     }
     
 }
