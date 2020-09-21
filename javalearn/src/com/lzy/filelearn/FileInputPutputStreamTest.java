@@ -56,10 +56,52 @@ public class FileInputPutputStreamTest {
     }
 
     //指定路径下的文件复制，包装成方法
-    public void copyx
+    public void copyFile(String src, String dest) {
+        FileInputStream fis = null;
+        FileOutputStream fos = null;
+        try {
+            File file = new File(src);
+            File file1 = new File(dest);
 
+            fis = new FileInputStream(file);
+            fos = new FileOutputStream(file1);
 
+            byte[] buffer = new byte[1024];
+            int len;
+            while ((len = fis.read(buffer)) != -1) {
+                fos.write(buffer, 0, len);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (fis != null)
+                    fis.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                if (fos != null)
+                    fos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
+    //测试copy函数
+    @Test
+    public void test3(){
+        long start=System.currentTimeMillis();
+        String src="bigtestimg.png";
+        String dest="bigcopyimg1.png";
+        copyFile(src,dest);
+
+        long end=System.currentTimeMillis();//5: 13214    10:6714    1024:82
+        System.out.println("*****");
+        System.out.println(end-start);
+
+    }
 
 
 

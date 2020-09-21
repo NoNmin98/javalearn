@@ -53,7 +53,7 @@ public class FileReaderWriterTest {
             //3.读入的操作
             //每次读入5个
             char[] cbuf = new char[5];
-            fileReader.read(cbuf);
+            //fileReader.read(cbuf);
             int len;
             //System.out.println(cbuf);
             //read(char[] cbuf)返回每次读入到数组中的字符的个数，如果到了末尾返回-1
