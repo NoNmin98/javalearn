@@ -29,7 +29,8 @@ public class Test2 {
             while((c=fr.read())!=-1){
                 char ch= (char) c;
                 //判断是否第一次出现，如果是第一次出现添加
-                if(map.get(ch)==null){
+                //if(map.get(ch)==null){
+                if (map.containsKey(ch)==false){
                     map.put(ch,1);
                 }else{
                     map.put(ch,map.get(ch)+1);
