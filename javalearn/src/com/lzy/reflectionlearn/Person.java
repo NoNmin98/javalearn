@@ -37,6 +37,10 @@ public class Person {
         this.age = age;
     }
 
+    private static void show1(){
+        System.out.println("一个静态方法");
+    }
+
 
     @Override
     public String toString() {

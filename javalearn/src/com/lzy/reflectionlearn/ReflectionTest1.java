@@ -3,6 +3,7 @@ package com.lzy.reflectionlearn;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 /**
  * @author: lzy
@@ -35,6 +36,19 @@ public class ReflectionTest1 {
         Class<Person> p = Person.class;
         //创建对应对象
         Person person = p.newInstance();
-        
+        //获取指定的某个方法
+        //参数1：指明获取的方法的名称，参数二：由于重载我们需要指明形参
+        Method show = p.getDeclaredMethod("showNation", String.class);
+        //保证当前方法可访问
+        show.setAccessible(true);
+        //调用
+        //参数一：方法的调用者，给方法新参赋值的实参
+        //此方法有返回值，就是对应类中调用的方法的返回值
+        show.invoke(person,"CHN");
+
+        //如何调用静态方法
+        Method show1 = p.getDeclaredMethod("show1");
+        show1.setAccessible(true);
+        show1.invoke(p);
     }
 }
