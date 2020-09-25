@@ -7,7 +7,7 @@ package com.lzy.reflectionlearn;
  */
 public class Person {
     private String name;
-    public int age;
+    private int age;
 
     public Person() {
     }
