@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="285dc860-5137-4557-9d2d-10ac18b4dc32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/awtlearn/src/com/lzy/draw/HandDrawTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javalearn/src/com/lzy/streamlearn/StreamCollect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javalearn/javalearn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javalearn/javalearn.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +192,10 @@
       <workItem from="1600991118418" duration="6435000" />
       <workItem from="1601014929010" duration="8376000" />
       <workItem from="1601079490627" duration="1336000" />
+      <workItem from="1601251776469" duration="2207000" />
+      <workItem from="1601286079000" duration="702000" />
+      <workItem from="1601336127482" duration="51000" />
+      <workItem from="1601422704330" duration="20000" />
     </task>
     <servers />
   </component>
@@ -289,12 +292,12 @@
     </state>
     <state x="217" y="69" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600487031233" />
     <state x="2137" y="70" key="SettingsEditor/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1600912152127" />
-    <state x="561" y="295" key="com.intellij.ide.util.TipDialog" timestamp="1601079488464">
+    <state x="561" y="295" key="com.intellij.ide.util.TipDialog" timestamp="1601426534913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="449" y="234" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600776394594" />
     <state x="561" y="295" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1600817184615" />
-    <state x="561" y="295" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1601079488464" />
+    <state x="561" y="295" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1601426534913" />
     <state x="2405" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1599313296319">
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
