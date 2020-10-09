@@ -1,10 +1,7 @@
 package com.lzy.JDBCUtils;
 
 import java.io.InputStream;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Properties;
 
 /**
@@ -29,8 +26,14 @@ public class JDBCUtils {
         return connection;
     }
     //注意这里需要使用try-catch处理异常
-    public void closeResource(Connection conn, Statement ps) throws SQLException {
+    public static void closeResource(Connection conn, Statement ps) throws SQLException {
         ps.close();
         conn.close();
+    }
+
+    public static void closeResource(Connection conn, Statement ps, ResultSet rs) throws SQLException {
+        ps.close();
+        conn.close();
+        rs.close();
     }
 }

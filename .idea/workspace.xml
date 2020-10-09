@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="285dc860-5137-4557-9d2d-10ac18b4dc32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jdbclearn/src/com/lzy/JDBCUtils/JDBCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbclearn/src/com/lzy/preparedstatement/crud/PreparedStatementUpdateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbclearn/src/com/lzy/bean/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbclearn/src/com/lzy/preparedstatement/crud/CustomerForQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbclearn/src/com/lzy/JDBCUtils/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbclearn/src/com/lzy/JDBCUtils/JDBCUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbclearn/src/com/lzy/preparedstatement/crud/PreparedStatementUpdateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbclearn/src/com/lzy/preparedstatement/crud/PreparedStatementUpdateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbclearn/src/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jdbclearn/src/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jdbclearn/com/lzy/JDBCUtils/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jdbclearn/com/lzy/JDBCUtils/JDBCUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jdbclearn/com/lzy/preparedstatement/crud/PreparedStatementUpdateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jdbclearn/com/lzy/preparedstatement/crud/PreparedStatementUpdateTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jdbclearn/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jdbclearn/jdbc.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,63 +72,34 @@
       <recent name="E:\IDEAProjects\learn\javalearn" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PreparedStatementUpdateTest.test1">
-    <configuration name="HandDrawTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzy.draw.HandDrawTest" />
-      <module name="awtlearn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lzy.draw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConnectionTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CustomerForQuery.test3">
+    <configuration name="CustomerForQuery.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbclearn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="connection.*" />
+          <option name="PATTERN" value="com.lzy.preparedstatement.crud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="connection" />
-      <option name="MAIN_CLASS_NAME" value="connection.ConnectionTest" />
+      <option name="PACKAGE_NAME" value="com.lzy.preparedstatement.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.lzy.preparedstatement.crud.CustomerForQuery" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConnectionTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerForQuery.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbclearn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="connection.*" />
+          <option name="PATTERN" value="com.lzy.preparedstatement.crud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="connection" />
-      <option name="MAIN_CLASS_NAME" value="connection.ConnectionTest" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConnectionTest.tests3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jdbclearn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="connection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="connection" />
-      <option name="MAIN_CLASS_NAME" value="connection.ConnectionTest" />
-      <option name="METHOD_NAME" value="tests3" />
+      <option name="PACKAGE_NAME" value="com.lzy.preparedstatement.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.lzy.preparedstatement.crud.CustomerForQuery" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,13 +121,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PreparedStatementUpdateTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbclearn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzy.preparedstatement.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzy.preparedstatement.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.lzy.preparedstatement.crud.PreparedStatementUpdateTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PreparedStatementUpdateTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbclearn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzy.preparedstatement.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzy.preparedstatement.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.lzy.preparedstatement.crud.PreparedStatementUpdateTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerForQuery.test3" />
+        <item itemvalue="JUnit.CustomerForQuery.test1" />
+        <item itemvalue="JUnit.PreparedStatementUpdateTest.test3" />
+        <item itemvalue="JUnit.PreparedStatementUpdateTest.test2" />
         <item itemvalue="JUnit.PreparedStatementUpdateTest.test1" />
-        <item itemvalue="JUnit.ConnectionTest.test5" />
-        <item itemvalue="JUnit.ConnectionTest.tests3" />
-        <item itemvalue="JUnit.ConnectionTest.test1" />
-        <item itemvalue="Application.HandDrawTest" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +209,8 @@
       <workItem from="1601336127482" duration="51000" />
       <workItem from="1601422704330" duration="20000" />
       <workItem from="1601426532205" duration="48000" />
-      <workItem from="1602123005431" duration="11542000" />
+      <workItem from="1602123005431" duration="12017000" />
+      <workItem from="1602204050659" duration="8726000" />
     </task>
     <servers />
   </component>
@@ -227,11 +237,11 @@
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
     <state x="2420" y="215" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1600910691464" />
-    <state x="2494" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1601027848238">
+    <state x="2494" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1602208775308">
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600586724903" />
-    <state x="2494" y="122" key="#com.intellij.ide.util.MemberChooser/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1601027848238" />
+    <state x="2494" y="122" key="#com.intellij.ide.util.MemberChooser/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602208775308" />
     <state x="82" y="340" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1600698526673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -252,30 +262,30 @@
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
     <state x="2469" y="167" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602125697078" />
-    <state width="1493" height="83" key="GridCell.Tab.0.bottom" timestamp="1602143202045">
+    <state width="1493" height="101" key="GridCell.Tab.0.bottom" timestamp="1602213211256">
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
     <state width="1493" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600602837042" />
     <state width="1493" height="179" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1599401606537" />
-    <state width="1493" height="83" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602143202045" />
-    <state width="1493" height="83" key="GridCell.Tab.0.center" timestamp="1602143202044">
+    <state width="1493" height="101" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602213211256" />
+    <state width="1493" height="101" key="GridCell.Tab.0.center" timestamp="1602213211256">
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
     <state width="1493" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600602837042" />
     <state width="1493" height="179" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1599401606537" />
-    <state width="1493" height="83" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602143202044" />
-    <state width="1493" height="83" key="GridCell.Tab.0.left" timestamp="1602143202044">
+    <state width="1493" height="101" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602213211256" />
+    <state width="1493" height="101" key="GridCell.Tab.0.left" timestamp="1602213211256">
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
     <state width="1493" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600602837042" />
     <state width="1493" height="179" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1599401606537" />
-    <state width="1493" height="83" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602143202044" />
-    <state width="1493" height="83" key="GridCell.Tab.0.right" timestamp="1602143202045">
+    <state width="1493" height="101" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602213211256" />
+    <state width="1493" height="101" key="GridCell.Tab.0.right" timestamp="1602213211256">
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
     <state width="1493" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600602837042" />
     <state width="1493" height="179" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1599401606537" />
-    <state width="1493" height="83" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602143202045" />
+    <state width="1493" height="101" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602213211256" />
     <state width="1493" height="252" key="GridCell.Tab.1.bottom" timestamp="1600845859310">
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
@@ -296,17 +306,17 @@
     </state>
     <state width="1493" height="252" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600602837042" />
     <state width="1493" height="252" key="GridCell.Tab.1.right/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1600845859310" />
-    <state x="2137" y="55" width="996" height="710" key="SettingsEditor" timestamp="1602144056201">
+    <state x="2137" y="55" width="996" height="710" key="SettingsEditor" timestamp="1602207622957">
       <screen x="1920" y="0" width="1536" height="832" />
     </state>
     <state x="217" y="69" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600487031233" />
-    <state x="2137" y="55" width="996" height="710" key="SettingsEditor/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602144056201" />
-    <state x="561" y="295" key="com.intellij.ide.util.TipDialog" timestamp="1602123004436">
+    <state x="2137" y="55" width="996" height="710" key="SettingsEditor/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602207622957" />
+    <state x="561" y="295" key="com.intellij.ide.util.TipDialog" timestamp="1602204066797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="449" y="234" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600776394594" />
     <state x="561" y="295" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1600817184615" />
-    <state x="561" y="295" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602123004436" />
+    <state x="561" y="295" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1602204066797" />
     <state x="2405" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1602123449591">
       <screen x="1920" y="0" width="1536" height="832" />
     </state>

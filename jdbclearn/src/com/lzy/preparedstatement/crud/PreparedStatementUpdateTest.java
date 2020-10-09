@@ -1,5 +1,6 @@
 package com.lzy.preparedstatement.crud;
 
+import com.lzy.JDBCUtils.JDBCUtils;
 import connection.ConnectionTest;
 import org.junit.Test;
 
@@ -7,6 +8,7 @@ import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
@@ -51,4 +53,50 @@ public class PreparedStatementUpdateTest {
         connection.close();
         is.close();
     }
+    //修改一条记录,要使用try-catch
+    @Test
+    public void test2() throws Exception {
+        //获取数据库连接
+        Connection conn = JDBCUtils.getConnection();
+        //预编译sql语句，返回preparedStatement实例
+        String sql="update customers set name =? where id= ? ";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        //填充占位符
+        ps.setString(1,"莫扎特");
+        ps.setObject(2,18);
+        //执行
+        ps.execute();
+        //资源关闭
+        JDBCUtils.closeResource(conn,ps);
+    }
+
+    //通用的增删改操作
+    //sql中可变形参的长度，等于占位符的个数
+    public void update(String sql,Object ... agrs)  {
+        Connection conn= null;
+        PreparedStatement ps = null;
+        try {
+            conn = JDBCUtils.getConnection();
+            ps = conn.prepareStatement(sql);
+            for (int i=0;i<agrs.length;i++){
+                ps.setObject(i+1,agrs[i]);//注意参数
+            }
+            ps.execute();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                JDBCUtils.closeResource(conn,ps);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    //测试通用操作
+    @Test
+    public void test3(){
+        String sql="delete from customers where id=?";
+        update(sql,21);
+    }
+
 }
