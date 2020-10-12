@@ -8,7 +8,6 @@ import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
@@ -85,11 +84,8 @@ public class PreparedStatementUpdateTest {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            try {
                 JDBCUtils.closeResource(conn,ps);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+
         }
     }
     //测试通用操作

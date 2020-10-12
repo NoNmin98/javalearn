@@ -26,14 +26,39 @@ public class JDBCUtils {
         return connection;
     }
     //注意这里需要使用try-catch处理异常
-    public static void closeResource(Connection conn, Statement ps) throws SQLException {
-        ps.close();
-        conn.close();
+    public static void closeResource(Connection conn, Statement ps) {
+        try {
+            if (conn!=null)
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            if (ps!=null)
+            ps.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
-    public static void closeResource(Connection conn, Statement ps, ResultSet rs) throws SQLException {
-        ps.close();
-        conn.close();
-        rs.close();
+    public static void closeResource(Connection conn, Statement ps, ResultSet rs) {
+        try {
+            if (conn!=null)
+                conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            if (ps!=null)
+                ps.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            if (rs!=null)
+            rs.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
