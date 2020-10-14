@@ -1,5 +1,10 @@
 package com.lzy.JDBCUtils;
 
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+
+import javax.sql.DataSource;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.sql.*;
 import java.util.Properties;
@@ -61,4 +66,29 @@ public class JDBCUtils {
             e.printStackTrace();
         }
     }
+
+    //使用druid数据库连接池建立连接
+    private static DataSource source;
+    //使用静态代码块
+    static{
+        //创建一个配置文件对象
+        try {
+            Properties pros = new Properties();
+            FileInputStream fis=new FileInputStream(new File("src/druid.properties"));
+            pros.load(fis);
+            source = DruidDataSourceFactory.createDataSource(pros);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Connection getConnection1() throws SQLException {
+
+        Connection conn =  source.getConnection();
+        return conn;
+    }
+
+
+
+
 }

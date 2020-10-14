@@ -7,8 +7,6 @@ import com.lzy.dao.CustomerDAOImpl;
 import java.sql.Connection;
 import java.sql.Date;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * @author: lzy
  * @description:
@@ -44,7 +42,7 @@ class CustomerDAOImplTest {
 
     @org.junit.jupiter.api.Test
     void getCount() throws Exception {
-        Connection conn = JDBCUtils.getConnection();
+        Connection conn = JDBCUtils.getConnection1();
 
         Long count = dao.getCount(conn);
         System.out.println(count);
